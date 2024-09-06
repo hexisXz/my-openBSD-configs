@@ -1,0 +1,11 @@
+super + r
+	rofi -theme Arc -show drun
+
+super + Return
+	kitty	
+
+super + c
+	xdotool getwindowfocus windowkill
+
+super + R
+	pkill -USR1 -x sxhkd
