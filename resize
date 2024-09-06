@@ -1,0 +1,5 @@
+#!/bin/sh
+fw=`xdotool getwindowfocus`
+for nw in `xdotool search --classname Navigator`; do
+   test "$fw" = "$nw" && xdotool windowsize "$fw" 500 200
+done
